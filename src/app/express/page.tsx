@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { Slider } from "@/components/ui/slider";
 import Visualization from "../components/Visualization";
+import GradualSpacing from "@/components/ui/gradual-spacing";
+import { Button } from "@/components/ui/button";
 
 const socket = io("ws://localhost:1234");
 
@@ -48,11 +50,18 @@ export default function Home() {
   }
 
   return (
-    <div className="flex h-screen w-screen flex-row gap-4">
-      <div className="flex w-80 flex-col items-start gap-6 bg-white bg-opacity-10 px-4 py-4">
-        <p className="text-4xl font-semibold text-white">Express</p>
+    <div className="mx-20 flex h-[600px] w-full flex-row gap-4">
+      <div className="flex w-80 flex-col items-start gap-6 bg-opacity-10 px-4 py-4">
+        <div>
+          <p className="text-4xl font-semibold">DuoSing</p>
+          <GradualSpacing
+            text="Aprende palabras"
+            delayMultiple={0.05}
+            className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center text-3xl font-medium leading-none tracking-tighter text-transparent [--animation-delay:200ms] dark:from-white dark:to-white/40"
+          />
+        </div>
         <div className="flex w-full flex-col gap-1">
-          <p className="text-lg text-white">Signing Speed</p>
+          <p className="text-lg">Signing Speed</p>
           <Slider
             defaultValue={[signingSpeed]}
             value={[signingSpeed]}
@@ -63,29 +72,29 @@ export default function Home() {
           />
         </div>
         <div className="flex w-full flex-col items-start justify-start gap-1">
-          <p className="text-lg text-white">Duration</p>
+          <p className="text-lg">Duration</p>
           <input
             value={duration}
             placeholder="Enter duration (in seconds)"
             onChange={(e) => setDuration(e.target.value)}
-            className="w-full rounded border border-white border-opacity-10 bg-transparent p-2 text-sm text-white placeholder-white placeholder-opacity-50 focus:outline-none"
+            className="w-full rounded border border-white border-opacity-10 bg-transparent p-2 text-sm placeholder-white placeholder-opacity-50 focus:outline-none"
           />
         </div>
         <div className="flex h-full w-full flex-col items-start justify-start gap-1">
-          <p className="text-lg text-white">Content</p>
+          <p className="text-lg">Content</p>
           <textarea
             value={text}
             placeholder="Enter text to sign"
             onChange={(e) => setText(e.target.value)}
-            className="h-full w-full rounded border border-white border-opacity-10 bg-transparent p-2 text-sm text-white placeholder-white placeholder-opacity-50 focus:outline-none"
+            className="h-full w-full rounded border border-white border-opacity-10 bg-transparent p-2 text-sm placeholder-white placeholder-opacity-50 focus:outline-none"
           />
         </div>
-        <div
-          className="flex w-full items-center justify-center rounded bg-blue-600 py-2 transition duration-300 hover:bg-blue-700"
+        <Button
+          className="flex w-full items-center justify-center rounded bg-secondary py-2 transition duration-300"
           onClick={() => socket.emit("E-REQUEST-ANIMATION", text)}
         >
-          <p className="select-none text-white">Render</p>
-        </div>
+          Render
+        </Button>
       </div>
       <Visualization
         full

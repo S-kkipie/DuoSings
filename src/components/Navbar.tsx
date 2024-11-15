@@ -6,12 +6,12 @@ export default function Navbar() {
   console.log("Navbar mounted");
 
   return (
-    <nav className="w-full shadow px-12 h-auto py-6 flex justify-between  text-primary bg-background fixed z-40">
-      <Link href="/duosings" className="text-4xl font-bold">DUOSINGS</Link>
-      <ul className="flex flex-col lg:flex-row lg:gap-5 ">
+    <nav className="w-full border-b px-12 h-auto py-6 flex justify-between  text-primary bg-background fixed z-40">
+      <Link href="/" className="text-4xl font-bold">DUOSING</Link>
+      <ul className="flex lg:flex-row lg:gap-5 ">
         <li className="font-semibold hover:-translate-y-1 hover:text-secondary transition">
-          <Link href="/duosings" className="block py-2 px-3 ">
-            Home
+          <Link href="/duosing" className="block py-2 px-3 ">
+            Try now our app!
           </Link>
         </li>
         <li className="font-semibold hover:-translate-y-1 hover:text-secondary transition">
