@@ -1,45 +1,106 @@
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { BorderBeam } from "@/components/ui/border-beam";
 import GradualSpacing from "@/components/ui/gradual-spacing";
+import Marquee from "@/components/ui/marquee";
 import Particles from "@/components/ui/particles";
 import SparklesText from "@/components/ui/sparkles-text";
 import { cn } from "@/lib/utils";
+const reviews = [
+  {
+    name: "Ana",
+    username: "@ana",
+    body: "¡Increíble! Facilita la comunicación en tiempo real.",
+    img: "https://avatar.vercel.sh/ana",
+  },
+  {
+    name: "Carlos",
+    username: "@carlos",
+    body: "Una herramienta esencial para la inclusión.",
+    img: "https://avatar.vercel.sh/carlos",
+  },
+  {
+    name: "Sofia",
+    username: "@sofia",
+    body: "Fácil de usar y traducción precisa.",
+    img: "https://avatar.vercel.sh/sofia",
+  },
+  {
+    name: "Luis",
+    username: "@luis",
+    body: "Revoluciona la forma de aprender lenguaje de señas.",
+    img: "https://avatar.vercel.sh/luis",
+  },
+  {
+    name: "María",
+    username: "@maria",
+    body: "Excelente app para mejorar la comunicación.",
+    img: "https://avatar.vercel.sh/maria",
+  },
+  {
+    name: "Pedro",
+    username: "@pedro",
+    body: "Una herramienta clave para la inclusión social.",
+    img: "https://avatar.vercel.sh/pedro",
+  },
+];
 
-import { useEffect, useState } from "react";
- 
-export default function Home() {
-  
+
+
+const ReviewCard = ({
+  img,
+  name,
+  username,
+  body,
+}: {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+}) => {
   return (
-    // <div className="mx-auto grid px-16 pb-8 lg:flex lg:gap-8">
-    //   <div className="mr-auto place-self-center lg:col-span-7">
-    //     <h1 className="mb-4 max-w-3xl text-4xl font-extrabold text-primary leading-8 tracking-tight md:text-5xl xl:text-6xl">
-    //       Aprende y comunica en lenguaje de señas
-    //       <div className="my-2 w-1 "/>
-    //
-    //     </h1>
-    //     <p className="my-6 max-w-2xl md:text-lg lg:mb-8 lg:text-xl">
-    //       Descubre el poder de la comunicación sin barreras: nuestra app de
-    //       traducción de señas, impulsada por inteligencia artificial, te conecta
-    //       en tiempo real con el lenguaje de señas, facilitando la inclusión y
-    //       comprensión.
-    //     </p>
-    //   </div>
-    //   <div className="hidden  lg:flex lg:w-1/2">
-    //     <img className="w-full" src="/hero.jpeg" alt="hero image" />
-    //   </div>
-    // </div>
+    <figure
+      className={cn(
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+      )}
+    >
+      <div className="flex flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="flex flex-col">
+          <figcaption className="text-sm font-medium dark:text-white">
+            {name}
+          </figcaption>
+          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+        </div>
+      </div>
+      <blockquote className="mt-2 text-sm">{body}</blockquote>
+    </figure>
+  );
+};
+export function MarqueeDemo() {
+  return (
+    <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden  bg-transparent md:shadow-xl">
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {reviews.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l dark:from-background"></div>
+    </div>
+  );
+}
+export default function Home() {
+  return (
     <div className="mx-auto flex-1 overflow-hidden">
-      <Particles
-        className="fixed inset-0"
-        quantity={100}
-        ease={80}
-        refresh
-      />
+      <Particles className="fixed inset-0" quantity={100} ease={80} refresh />
       <section
         id="hero"
-        className="relative mx-auto mt-12 max-w-[80rem] px-6 text-center md:px-8"
+        className="relative mx-auto mt-12 flex flex-col items-center px-6 text-center md:px-8"
       >
-        <div className="mb-16 max-w-full px-10">
+        <div className="mb-16  px-10">
           <GradualSpacing
             framerProps={{
               hidden: { opacity: 0.3, x: -20 },
@@ -92,10 +153,11 @@ export default function Home() {
             ></path>
           </svg>
         </button>
-        <div className="relative mt-12 flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <div className="relative mt-12 flex h-[500px] max-w-[80rem] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
           <img src="/duoHero.jpeg" alt="" />
-          <BorderBeam size={250} duration={12} delay={9} />
+          <BorderBeam duration={12} delay={9} />
         </div>
+        <MarqueeDemo />
       </section>
     </div>
   );
