@@ -1,68 +1,129 @@
 import React from "react";
 
-const Footer = () => {
+function Footer() {
+  console.log("footer mounted");
+
   return (
-    <footer className="bg-gradient-to-b from-transparent to-transparent opacity-80 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-wrap mb-12">
-          <div className="w-full md:w-1/2 xl:w-1/4 mb-8 md:mb-0">
-            <h3 className="font-bold mb-4 text-[#00FF00]">Cauc Community</h3>
-            <p className="mb-4 text-[#32CD32] pr-6">
-              In a world where information is power, we are committed to protecting your data and ensuring your security, providing tools and knowledge that prepare you to face any threat and ensure a safer digital future for all.
+    <footer className="text-surface/75 text-center">
+      <div className="flex items-center justify-center border-b-2 p-6 lg:justify-between">
+        <div className="me-12 hidden lg:block">
+          <span>Puedes aprender el lenguaje de señas en nuestra página web:</span>
+        </div>
+        <div className="flex justify-center">
+          <a
+            href="https://github.com/S-kkipie/DuoSings"
+            className="[&>svg]:h-4 [&>svg]:w-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 496 512"
+            >
+              {/* ... (SVG del icono de GitHub) ... */}
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div className="mx-6 py-10 text-center md:text-left">
+        <div className="grid-1 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div className="">
+            <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+              <span className="me-3 [&>svg]:h-4 [&>svg]:w-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  {/* ... (SVG del icono de aprendizaje) ... */}
+                </svg>
+              </span>
+              Aprender Sign Language
+            </h6>
+            <p>
+              En un mundo donde la comunicación es clave, estamos comprometidos con enseñar y difundir el lenguaje de señas para facilitar la interacción y el entendimiento entre las personas con discapacidad auditiva y el mundo alrededor.
             </p>
           </div>
-          <div className="w-full md:w-1/2 xl:w-1/4 mb-8 md:mb-0">
-            <h3 className="font-bold mb-4 text-[#00FF00]">Cybersecurity Tools</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#32CD32]">Nmap</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">Metasploit</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">Wireshark</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">Burp Suite</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/2 xl:w-1/4 mb-8 md:mb-0">
-            <h3 className="font-bold mb-4 text-[#00FF00]">Useful Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-[#32CD32]">Home</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">Categories</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">Help</a></li>
-              <li><a href="#" className="hover:text-[#32CD32]">About us</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/2 xl:w-1/4">
-            <h3 className="font-bold mb-4 text-[#00FF00]">Contact</h3>
-            <p className="mb-4 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeWidth={2} d="M3 6l3 15m0 0l3-15H3m12 3v3m-9-8h10a4 4 0 018-4zm-4 3.93l.73.92 11.28-.46L17.74 7.88a1 1 0 011.42-1.41l3-3m2 6J0 17a2 2 0 112 2v4a2 2 0 01-2 4h-1.06a2 2 0 110-4H14l5-9V9m3 3c0-5.118 4.43-9.08 9.58-9.58zM9 21v-2.22c-3.35 1.04-4 3.39-4 6.22 0 2.82 1.18 5.23 3.35 5.92l.73.92c.20.14-.02.62-.42.92L5.09 19.09l-.78-.92a7.73 7.73 0 0111.28-4z" />
-              </svg>
-              GitHub Repository
+          <div>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Recursos de aprendizaje
+            </h6>
+            <p className="mb-4">
+              <a href="#!">Lecciones básicas</a>
             </p>
-            <p className="mb-4 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeWidth={2} d="M19 9l-7 7-7-7zM15 19l-1.412-1.412-1.41-1.41L11 3l-2 2zm0 7l3-3 3 3zM8 11l4-4-1.414-1.414z" />
-              </svg>
-              Contact Us
+            <p className="mb-4">
+              <a href="#!">Práctica interactiva</a>
             </p>
-            <p className="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeWidth={2} d="M19 9l-7 7-7-7zM15 19l-1.412-1.412-1.41-1.41L11 3l-2 2zm0 7l3-3 3 3zM8 11l4-4-1.414-1.414z" />
-              </svg>
-              Follow Us
+            <p className="mb-4">
+              <a href="#!">Videos tutoriales</a>
+            </p>
+            <p>
+              <a href="#!">Guía de signos</a>
             </p>
           </div>
+
+          <div>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Enlaces útiles
+            </h6>
+            <p className="mb-4">
+              <a href="#!">Inicio</a>
+            </p>
+            <p className="mb-4">
+              <a href="#!">Categorías</a>
+            </p>
+            <p className="mb-4">
+              <a href="#!">Ayuda</a>
+            </p>
+            <p>
+              <a href="#!">Acerca de nosotros</a>
+            </p>
           </div>
-        <div className="bg-black opacity-90 py-8">
-          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Cauc Community. All rights reserved.</p>
-            <div className="flex items-center">
-              <a href="#" className="mr-4 text-[#32CD32] hover:text-white">Terms of Service</a>
-              <a href="#" className="text-[#32CD32] hover:text-white">Privacy Policy</a>
-            </div>
+          <div>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Contacto
+            </h6>
+            <p className="mb-4 flex items-center justify-center md:justify-start">
+              <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  {/* ... (SVG del icono de correo electrónico) ... */}
+                </svg>
+              </span>
+              aprendizaje.senalización@gmail.com
+            </p>
+            <p className="mb-4 flex items-center justify-center md:justify-start">
+              <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  {/* ... (SVG del icono de redes sociales) ... */}
+                </svg>
+              </span>
+              @aprendizajodelenguajesigns
+            </p>
+            <p className="flex items-center justify-center md:justify-start">
+              <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  {/* ... (SVG del icono de ubicación) ... */}
+                </svg>
+              </span>
+             
+            </p>
           </div>
         </div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
