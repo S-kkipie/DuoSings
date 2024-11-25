@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./tailwind.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Particles from "@/components/ui/particles";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,7 +41,8 @@ export default function RootLayout({
         <main className="mt-16 p-10">
           {children}
         </main>
-
+      <Particles className="fixed inset-0" quantity={500} ease={80} refresh />
+        
         <Footer />
       </body>
     </html>

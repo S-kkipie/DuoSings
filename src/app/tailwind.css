@@ -17,7 +17,7 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 236 78% 41%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 356 78% 41%;
+    --accent: 236 5% 32%;
     --accent-foreground: 0 0% 100%;
     --destructive: 7 85% 36%;
     --destructive-foreground: 7 85% 96%;
@@ -40,9 +40,9 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 236 78% 41%;
     --secondary-foreground: 0 0% 100%;
-    --accent: 356 78% 41%;
+    --accent: 236 5% 68%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 7 85% 60%;
+    --destructive: 356 78% 41%;
     --destructive-foreground: 0 0% 0%;
     --ring: 116 78% 41%;
   }
