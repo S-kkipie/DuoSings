@@ -51,374 +51,338 @@ const reviews = [
 ];
 const modules = [
   {
-    title: "ASL Foundations: A Beginner’s Journey (5 weeks)",
+    title: "ASL Fundamentals",
     description:
       "Learn the basics of American Sign Language, including the alphabet, numbers, and common phrases.",
     duration: "5 weeks",
     lessons: [
       {
         week: "Week 1",
-        lesson: "Deaf Awareness, Alphabet, Meet & Greet",
+        lesson: "Introduction to ASL, alphabet, and basic numbers.",
         activities:
-          "Complete Deaf Awareness Quiz, Practice fingerspelling names, Fingerspell phone game",
+          "-Practice fingerspelling your name and basic numbers with a partner.",
         homework:
-          "Complete ABC’s and Meet & Greet activities on ASLdeafined, Record an expressive video signing the ABC’s",
+          "-Watch an ASL alphabet video and spell 10 common words.",
       },
       {
         week: "Week 2",
-        lesson: "Review Alphabet, Numbers 1-20, Handshapes & Locations, Colors",
+        lesson: "Common greetings and farewells.",
         activities:
-          "Review ABC’s, Count from 1-20 with a partner, Share favorite and least favorite colors",
+          "-Role-play meeting someone new and saying goodbye.",
         homework:
-          "Complete activities on ASLdeafined, Record signing numbers 1-20",
+          "-Practice signing 5 greetings and farewells in front of a mirror.",
       },
       {
         week: "Week 3",
-        lesson: "Survival Words, Deaf Culture 1, Fingerspelling 1",
+        lesson: "Personal pronouns and basic questions.",
         activities:
-          "Identify handshapes and locations, Practice vocabulary, Sentence translations, Engage in short ASL conversations",
+          "-Play a matching game pairing pronouns with common actions.",
         homework:
-          "Complete activities on ASLdeafined, Record fingerspelling your 10 favorite people",
+          "-Write and sign 5 simple sentences using pronouns.",
       },
       {
         week: "Week 4",
-        lesson: "Family, Pronouns, Verb 1",
+        lesson: "Emotions and simple descriptions.",
         activities:
-          "Identify handshapes and locations, Practice vocabulary, Sentence translations, Engage in short ASL conversations",
+          "-Act out emotions and have your partner guess them.",
         homework:
-          "Complete activities on ASLdeafined, Record fingerspelling family members' names",
+          "-Create flashcards for 10 emotion-related signs.",
       },
       {
         week: "Week 5",
         lesson:
-          "Antonyms & Synonyms 1, Famous Deaf People 1, Classroom Essentials 1, Quiz 1",
+          "Family and relationships.",
         activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
+          "-Draw a family tree and sign each relationship.",
         homework:
-          "Complete activities on ASLdeafined, Record fingerspelling each word and signing it",
+          "-Practice introducing your family to someone in ASL",
       },
     ],
   },
   {
-    title: "ASL in Action: Building on Basics (6 weeks)",
+    title: "Everyday Communication",
     description:
       "Continue learning American Sign Language with more advanced vocabulary and sentence structure.",
     duration: "6 weeks",
     lessons: [
       {
         week: "Week 6",
-        lesson: "Handshape Quiz 1, Grammar Quiz 1, Question Words",
+        lesson: "Foods and drinks.",
         activities:
-          "Identify handshapes and locations, Practice vocabulary and sentences, Engage in ASL conversations",
-        homework: "Record signing sentences using 10 question words",
+          "-Sign a pretend grocery list to a partner.",
+        homework: "-Watch a cooking video in ASL and list new vocabulary.",
       },
       {
         week: "Week 7",
-        lesson: "Classroom Essentials 2, Time-1",
+        lesson: "Advanced numbers and time concepts.",
         activities:
-          "Practice vocabulary and sentences, Handshape games, Engage in ASL conversations",
-        homework: "Record using 10 vocabulary signs from Time-1 in sentences",
+          "-Create a schedule and sign the times for each activity.",
+        homework: "-Practice signing the time for daily activities.",
       },
       {
         week: "Week 8",
-        lesson: "Emotions, Deaf Culture 2, Clothing",
+        lesson: "Daily activities.",
         activities:
-          "Practice vocabulary and sentences, Handshape games, Engage in ASL conversations",
-        homework: "Record signing what emotion you feel today and why",
+          "Sign your morning or evening routine.",
+        homework: "Record yourself signing 5 daily activities.",
       },
       {
         week: "Week 9",
-        lesson: "Animals 1, Verbs 2, Antonyms & Synonyms 2",
+        lesson: "Transportation and directions.",
         activities:
-          "Practice vocabulary and sentences, Handshape games, Engage in ASL conversations",
-        homework: "Record signing animals seen in a petting zoo",
+          "Role-play giving directions to a destination.",
+        homework: "Create a map and sign directions to key places.",
       },
       {
         week: "Week 10",
-        lesson: "Beverages 1, Deaf History 1, Quiz 2",
+        lesson: "Weather and nature.",
         activities:
-          "Practice vocabulary and sentences, Handshape games, Engage in ASL conversations",
+          "Use weather flashcards to describe today’s weather.",
         homework:
-          "Record signing preferred beverages, with matching facial expressions",
-      },
-      {
-        week: "Week 11",
-        lesson: "Location Quiz 1, Famous Deaf People 2, Human Body",
-        activities:
-          "Identify handshapes and locations, Practice vocabulary with partner, Engage in ASL conversations",
-        homework:
-          "Complete activities on ASLdeafined, Record fingerspelling body parts and point to them on your body",
-      },
+          "Sign a 7-day weather forecast.",
+      },  
     ],
   },
   {
-    title: "Mastering ASL: Advanced Vocabulary and Conversations (6 weeks)",
+    title: "Social Environment",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "6 weeks",
     lessons: [
       {
-        week: "Week 12",
-        lesson: "Numbers 21-40, Math Number Challenge 2, House",
+        week: "Week 11",
+        lesson: "School and education.",
         activities:
-          "Practice vocabulary, Sentence translations, Handshape games, Engage in ASL conversations",
+          "Sign items in a classroom scene.",
         homework:
-          "Record a video describing the cleanest, dirtiest, and biggest room in your house",
+          "Write and sign 3 sentences about your school experience.",
+      },
+      {
+        week: "Week 12",
+        lesson: "Jobs and professions.",
+        activities:
+          "Mime various professions and have others guess them.",
+        homework:
+          "Create a list of 5 professions and their signs.",
       },
       {
         week: "Week 13",
-        lesson: "Food 1, Storytime by Jonelle 1, Deaf Culture 3",
+        lesson: "Hobbies and sports",
         activities:
-          "Practice learned vocabulary, Sentence translations, Engage in ASL conversations",
+          "Sign a dialogue about your favorite hobby.",
         homework:
-          "Record a video discussing what you eat for breakfast, lunch, and dinner",
+          "Learn and practice 3 sports-related signs.",
       },
       {
         week: "Week 14",
-        lesson: "Fingerspelling 2, Verbs 3, Antonyms & Synonyms 3",
+        lesson: "Vacations and holidays",
         activities:
-          "Identify handshapes, Practice sentence translations, Engage in ASL conversations",
+          "Sign your favorite holiday traditions.",
         homework:
-          "Record 10 verbs from the lesson, fingerspell and sign them, find synonyms for each",
+          "Create a short video signing about your last vacation.",
       },
       {
         week: "Week 15",
-        lesson: "Adjectives (Size), Seasons, Days of the Week, Quiz 3",
+        lesson: "Shopping and money",
         activities:
-          "Practice vocabulary and sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing each day of the week and describe your activities on those days",
-      },
-      {
-        week: "Week 16",
-        lesson: "Handshape Quiz, Grammar Quiz 2, Famous Deaf People 3",
-        activities:
-          "Identify handshapes, Practice sentence translations, Engage in ASL conversations",
-        homework: "Record three facts about William Ellsworth 'Dummy' Hoy",
-      },
-      {
-        week: "Week 17",
-        lesson: "Numbers 41-60, Math Number Challenge 3, Rooms in a House",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework: "Record signing numbers 0-60 and identify any difficulties",
+          "Role-play shopping and discussing prices.",
+        homework: "Write and sign 3 dialogues involving shopping.",
       },
     ],
   },
   {
-    title: "Fluent in ASL: Advanced Concepts and Conversation (8 weeks)",
+    title: "Expression and Storytelling",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "8 weeks",
     lessons: [
       {
-        week: "Week 18",
-        lesson: "Feelings, Verbs 4, Antonyms & Synonyms 4",
+        week: "Week 16",
+        lesson: "Colors and shapes.",
         activities:
-          "Practice vocabulary and sentence translations, Engage in ASL conversations",
+          "Identify objects of specific colors and shapes in the room.",
+        homework: "Create a visual collage and label it with ASL signs.",
+      },
+      {
+        week: "Week 17",
+        lesson: "Animals and household objects.",
+        activities:
+          "Match animal signs to their pictures.",
         homework:
-          "Record gestures (no signing) for feelings like thirsty, lost, and confident",
+          "Sign a story about a pet or favorite animal.",
+      },
+      {
+        week: "Week 18",
+        lesson: "Common verbs and adjectives.",
+        activities:
+          "Pair verbs with adjectives in mini-sentences.",
+        homework:
+          "Practice signing 10 action-oriented sentences.",
       },
       {
         week: "Week 19",
-        lesson: "Prepositions, Food 2, Action Verbs 1",
+        lesson: "Telling simple stories.",
         activities:
-          "Practice vocabulary, Sentence translations, Handshape games, Engage in ASL conversations",
+          "Retell a simple children’s story in ASL.",
         homework:
-          "Write 10 sentences in English, translate to ASL, and record signing them",
+          "Create a storyboard for an ASL tale.",
       },
       {
         week: "Week 20",
-        lesson: "Midterm Review and Examination",
+        lesson: "Idiomatic expressions",
         activities:
-          "Review all lessons from weeks 1-19, Practice vocabulary and sentence construction",
+          "Learn 5 idioms and use them in a conversation.",
         homework:
-          "Prepare for the midterm exam, review all ASL concepts and recordings",
+          "Research 3 more idioms and practice signing them.",
       },
-      {
-        week: "Week 21",
-        lesson: "Character, Deaf History 2, Quiz 4",
-        activities:
-          "Identify handshapes and locations, Practice vocabulary and sentence translations, Engage in ASL conversations",
-        homework:
-          "Record yourself signing about 10 family members and match a character trait to them",
-      },
-      {
-        week: "Week 22",
-        lesson: "Location Quiz 2, Numbers 61-80, Math Number Challenge 4",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing numbers 0-80 while someone calls out random numbers",
-      },
-      {
-        week: "Week 23",
-        lesson: "Famous Deaf People 4, Fruits & Veggies, Places",
-        activities:
-          "Identify handshapes and locations, Practice vocabulary and sentence translations, Engage in ASL conversations",
-        homework:
-          "Record a video planning a weekend for your family, describing 4 places you will visit",
-      },
-      {
-        week: "Week 24",
-        lesson: "Adverbs 1, Deaf Culture 4, Verbs 5",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record fingerspelling and signing each vocabulary word, then review the video for improvements",
-      },
-      {
-        week: "Week 25",
-        lesson: "Antonyms & Synonyms 5, Time 2, Kitchen",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing 10 different times (a.m. and p.m.) and review the clarity of your signs",
-      },
+      
     ],
   },
   {
-    title: "ASL Proficiency: Mastering Complex Sentences (6 weeks)",
-    description:
-      "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
-    duration: "6 weeks",
-    lessons: [
+    "title": "Practical Situations",
+    "description": "Master American Sign Language in practical scenarios, focusing on everyday situations and cultural etiquette.",
+    "duration": "5 weeks",
+    "lessons": [
       {
-        week: "Week 26",
-        lesson: "Calendar, Storytime by Jonelle 2, Quiz 5",
-        activities:
-          "Identify handshapes, Practice vocabulary, Engage in ASL conversations",
-        homework:
-          "Record introducing your family members and their birthdates, including any pets",
+        "week": "Week 21",
+        "lesson": "Emergencies and health",
+        "activities": "Role-play asking for help in an emergency",
+        "homework": "Create flashcards for 5 health-related signs"
       },
       {
-        week: "Week 27",
-        lesson: "Handshape Quiz 3, Grammar Quiz 2, Famous Deaf People 5",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework: "Record three facts about Helen Keller",
+        "week": "Week 22",
+        "lesson": "Public transport and travel",
+        "activities": "Sign a dialogue about planning a trip",
+        "homework": "Watch a travel-related ASL video and note new vocabulary"
       },
       {
-        week: "Week 28",
-        lesson:
-          "Numbers 81-100, Math Number Challenge 5, Symptoms of Illness 1",
-        activities:
-          "Practice vocabulary and sentence translations, Engage in ASL conversations",
-        homework:
-          "Record a video describing a time you visited a doctor’s office or hospital and how you felt",
+        "week": "Week 23",
+        "lesson": "Restaurants and ordering food",
+        "activities": "Role-play ordering at a restaurant",
+        "homework": "Sign a list of your favorite meals"
       },
       {
-        week: "Week 29",
-        lesson: "Grocery Store, Extended Family, Living Room",
-        activities:
-          "Identify handshapes, Practice vocabulary, Engage in ASL conversations",
-        homework:
-          "Record describing various family members, such as grandparents, nieces, and best friends",
+        "week": "Week 24",
+        "lesson": "Video phone conversations",
+        "activities": "Simulate a video call in ASL",
+        "homework": "Write a script for a video conversation"
       },
       {
-        week: "Week 30",
-        lesson: "Verbs 6, Antonyms & Synonyms 6, Food 3",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record 10 verbs without looking up synonyms and identify alternative words from memory",
-      },
-      {
-        week: "Week 31",
-        lesson: "Religion 1, Deaf History 3, Quiz 6",
-        activities:
-          "Identify handshapes, Practice vocabulary and sentence translations, Engage in ASL conversations",
-        homework:
-          "Record yourself discussing how you would plan a worship service, including details like music or prayer",
-      },
-    ],
+        "week": "Week 25",
+        "lesson": "Deaf community culture and etiquette",
+        "activities": "Discuss and sign 3 facts about Deaf culture",
+        "homework": "Research Deaf events and write a short summary"
+      }
+    ]
   },
   {
-    title: "Advanced ASL Immersion: Culture and Communication (4 weeks)",
-    description:
-      "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
-    duration: "4 weeks",
-    lessons: [
+    "title": "Advanced Topics",
+    "description": "Advance your ASL proficiency by tackling complex grammar, comparisons, and persuasive communication.",
+    "duration": "5 weeks",
+    "lessons": [
       {
-        week: "Week 32",
-        lesson: "Location Quiz 3, Sports, Famous Deaf People 6",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record a video explaining which sport you would play professionally or why you don't like sports",
+        "week": "Week 26",
+        "lesson": "Detailed descriptions",
+        "activities": "Describe an object in detail and have others guess it",
+        "homework": "Sign 3 descriptions of items in your house"
       },
       {
-        week: "Week 33",
-        lesson: "Bathroom, Celebrations, Domestic Pets",
-        activities:
-          "Identify handshapes, Practice vocabulary, Engage in ASL conversations",
-        homework:
-          "Record yourself signing about the domestic pets you would love to have and why",
+        "week": "Week 27",
+        "lesson": "Advanced grammar and sentence structure",
+        "activities": "Rearrange sentences to practice ASL grammar",
+        "homework": "Translate 3 English sentences into ASL structure"
       },
       {
-        week: "Week 34",
-        lesson: "Deaf Culture 5, Fingerspelling 3, Clothing Accessories",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing about the types of clothing accessories you use most and where you buy them",
+        "week": "Week 28",
+        "lesson": "Comparisons and contrasts",
+        "activities": "Sign comparisons between two items or ideas",
+        "homework": "Create a Venn diagram and explain it in ASL"
       },
       {
-        week: "Week 35",
-        lesson: "Bedroom, Winter, Quiz 7, Handshape Quiz 4",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing about your favorite winter memory, including detailed experiences",
+        "week": "Week 29",
+        "lesson": "Formal and informal registers",
+        "activities": "Practice signing in formal and casual styles",
+        "homework": "Write a formal ASL introduction"
       },
-    ],
+      {
+        "week": "Week 30",
+        "lesson": "Persuasive and argumentative speech",
+        "activities": "Debate a simple topic using ASL",
+        "homework": "Sign a persuasive message about a topic you care about"
+      }
+    ]
   },
   {
-    title: "ASL Mastery: Fluency and Cultural Exploration (5 weeks)",
-    description:
-      "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
-    duration: "5 weeks",
-    lessons: [
+    "title": "Connecting with the Community",
+    "description": "Engage with the Deaf community through cultural, technological, and social perspectives.",
+    "duration": "5 weeks",
+    "lessons": [
       {
-        week: "Week 36",
-        lesson:
-          "Grammar Quiz 4, Numbers in Hundreds, Math Number Challenge 6, Weather 1",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing about weather you dislike, such as lightning or driving in snow",
+        "week": "Week 31",
+        "lesson": "History of the Deaf community.",
+        "activities": "Present a historical fact about the Deaf community.",
+        "homework": "Watch a video on Deaf history and summarize it."
       },
       {
-        week: "Week 37",
-        lesson: "Storytime by Jonelle 3, Symptoms of Illness 2, Verbs 7",
-        activities:
-          "Identify handshapes, Practice vocabulary, Engage in ASL conversations",
-        homework:
-          "Record fingerspelling a verb from the lesson and signing its opposite (e.g., destroy and build)",
+        "week": "Week 32",
+        "lesson": "Events and social participation.",
+        "activities": "Practice signing an invitation to an event.",
+        "homework": "Create an ASL flyer for a fictional Deaf event."
       },
       {
-        week: "Week 38",
-        lesson: "Antonyms & Synonyms 7, Time 3, Professionals 1",
-        activities:
-          "Practice vocabulary, Sentence translations, Engage in ASL conversations",
-        homework:
-          "Record signing your daily activities from Monday through Sunday",
+        "week": "Week 33",
+        "lesson": "Technology use in ASL.",
+        "activities": "Role-play using a device like a TTY or video relay.",
+        "homework": "Research a new ASL-related technology."
       },
       {
-        week: "Week 39",
-        lesson: "Transportation, Storytime by Levi 1, Thanksgiving",
-        activities:
-          "Identify handshapes, Practice vocabulary, Engage in ASL conversations",
-        homework:
-          "Record signing about a memorable Thanksgiving, including what you ate and who was with you",
+        "week": "Week 34",
+        "lesson": "Interviews and dialogues.",
+        "activities": "Conduct a mock interview with a partner.",
+        "homework": "Write and practice 5 interview questions."
       },
       {
-        week: "Week 40",
-        lesson: "Final Exam",
-        activities:
-          "Review all learned material, Practice vocabulary and sentence construction, Final assessments",
-        homework:
-          "Prepare for the final exam by reviewing all previous recordings and lessons",
+        "week": "Week 35",
+        "lesson": "Diversity in ASL (regionalisms).",
+        "activities": "Learn and practice 3 regional variations in signs.",
+        "homework": "Research and record 3 examples of ASL diversity."
+      }
+    ]
+  },
+  {
+    "title": "Mastering ASL",
+    "description": "Achieve fluency through advanced storytelling, projects, and real-world applications.",
+    "duration": "5 weeks",
+    "lessons": [
+      {
+        "week": "Week 36",
+        "lesson": "Games and activities in ASL.",
+        "activities": "Play ASL charades or bingo.",
+        "homework": "Create your own ASL game."
+      },
+      {
+        "week": "Week 37",
+        "lesson": "Advanced storytelling and presentations.",
+        "activities": "Present a short ASL story to a group.",
+        "homework": "Record and review a signed story."
+      },
+      {
+        "week": "Week 38",
+        "lesson": "Assessment and feedback.",
+        "activities": "Peer-review signed sentences or stories.",
+        "homework": "Reflect on your ASL learning journey in a signed video."
+      },
+      {
+        "week": "Week 39",
+        "lesson": "Group projects.",
+        "activities": "Collaborate on a signed presentation.",
+        "homework": "Develop a group story in ASL."
+      },
+      {
+        "week": "Week 40",
+        "lesson": "Real-life simulations.",
+        "activities": "Role-play real-world scenarios, like job interviews.",
+        "homework": "Sign a goodbye video summarizing your learning experience."
       },
     ],
   },
