@@ -283,7 +283,7 @@ const modules = [
       {
         "week": "Week 26",
         "lesson": "Detailed descriptions",
-        "activities": "Describe an object in detail and have others guess it",
+        "activities": "Describe an object in detail",
         "homework": "Sign 3 descriptions of items in your house"
       },
       {
@@ -338,7 +338,7 @@ const modules = [
       {
         "week": "Week 34",
         "lesson": "Interviews and dialogues.",
-        "activities": "Conduct a mock interview with a partner.",
+        "activities": "Conduct a mock interview.",
         "homework": "Write and practice 5 interview questions."
       },
       {
@@ -363,7 +363,7 @@ const modules = [
       {
         "week": "Week 37",
         "lesson": "Advanced storytelling and presentations.",
-        "activities": "Present a short ASL story to a group.",
+        "activities": "Present a short ASL story.",
         "homework": "Record and review a signed story."
       },
       {
@@ -374,9 +374,9 @@ const modules = [
       },
       {
         "week": "Week 39",
-        "lesson": "Group projects.",
-        "activities": "Collaborate on a signed presentation.",
-        "homework": "Develop a group story in ASL."
+        "lesson": "Interactions.",
+        "activities": "Collaborate on a sign language presentation.",
+        "homework": "Develop a sign language story or conversation."
       },
       {
         "week": "Week 40",
