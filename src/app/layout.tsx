@@ -38,11 +38,9 @@ export default function RootLayout({
         <Navbar />
         <div className="pt-1">{auth}</div>
 
-        <main className="mt-16 p-10">
-          {children}
-        </main>
-      <Particles className="fixed inset-0" quantity={500} ease={80} refresh />
-        
+        <main className="mt-16 p-10">{children}</main>
+        <Particles className="fixed inset-0" quantity={500} ease={80} refresh />
+
         <Footer />
       </body>
     </html>

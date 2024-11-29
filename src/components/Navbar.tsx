@@ -10,7 +10,7 @@ export default function Navbar() {
       <Link href="/" className="text-4xl font-bold">DUOSING</Link>
       <ul className="flex lg:flex-row lg:gap-5 ">
         <li className="font-semibold hover:-translate-y-1 hover:text-secondary transition">
-          <Link href="/lesson" className="block py-2 px-3 ">
+          <Link href="/learn" className="block py-2 px-3 ">
             Start your learning!!!
           </Link>
         </li>
