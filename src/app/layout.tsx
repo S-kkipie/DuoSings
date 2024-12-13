@@ -1,9 +1,12 @@
+"use client";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./tailwind.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Particles from "@/components/ui/particles";
+import { SessionProvider } from "next-auth/react";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,11 +18,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
-export const metadata: Metadata = {
-  title: "DUOSINGS",
-  description: "Hecho por Skkippie",
-};
 
 export default function RootLayout({
   auth,
@@ -35,15 +33,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} dark antialiased`}
       >
-        <Navbar />
-        <div className="pt-1">{auth}</div>
+        <SessionProvider>
+          <Navbar />
+          <div className="pt-1">{auth}</div>
 
-        <main className="mt-16 p-10">
-          {children}
-        </main>
-      <Particles className="fixed inset-0" quantity={500} ease={80} refresh />
-        
-        <Footer />
+          <main className="mt-16 p-10">{children}</main>
+          <Particles
+            className="fixed inset-0"
+            quantity={250}
+            ease={80}
+            refresh
+          />
+
+          <Footer />
+          <Toaster />
+        </SessionProvider>
       </body>
     </html>
   );
