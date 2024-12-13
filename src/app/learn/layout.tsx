@@ -28,7 +28,11 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const path = usePathname();
+<<<<<<< HEAD
   const pathArray = path!.split("/");
+=======
+  const pathArray = path.split("/");
+>>>>>>> d35e6adba966ea2d9f3fe0433028e30e1f4c4435
 
   console.log(pathArray);
   return (
@@ -55,7 +59,11 @@ export default function DashboardLayout({
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start">
                 {modules.map((module, index) => (
+<<<<<<< HEAD
                   <Link key={index} href={module.href}>
+=======
+                  <Link href={module.href}>
+>>>>>>> d35e6adba966ea2d9f3fe0433028e30e1f4c4435
                     <DropdownMenuItem key={index}>
                       <h1 className={cn("block p-2")}>{module.title}</h1>
                     </DropdownMenuItem>
@@ -64,6 +72,7 @@ export default function DashboardLayout({
               </DropdownMenuContent>
             </DropdownMenu>
           </BreadcrumbItem>
+<<<<<<< HEAD
           {
             pathArray.length > 3 && (
               <>
@@ -78,6 +87,11 @@ export default function DashboardLayout({
               </>
             )
           }
+=======
+          <BreadcrumbSeparator>
+            <Slash />
+          </BreadcrumbSeparator>
+>>>>>>> d35e6adba966ea2d9f3fe0433028e30e1f4c4435
         </BreadcrumbList>
       </Breadcrumb>
       {children}

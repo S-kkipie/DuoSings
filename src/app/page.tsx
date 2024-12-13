@@ -192,6 +192,23 @@ function Monito() {
   );
 }
 export default function Home() {
+  const {
+    currentWord,
+    signingSpeed,
+    setSigningSpeed,
+    duration,
+    setDuration,
+    socket,
+    getNextWord,
+  } = useWordAnimations();
+
+  useEffect(() => {
+    if (socket) {
+      socket.emit("E-REQUEST-ANIMATION", "HELLO WORLD");
+    } else {
+      console.warn("Socket is not initialized yet.");
+    }
+  }, [socket]);
   return (
     <div className="mx-auto flex-1 overflow-hidden">
       <section

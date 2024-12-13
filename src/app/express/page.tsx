@@ -9,7 +9,11 @@ import { Slider } from "@/components/ui/slider";
 import Visualization from "../components/Visualization";
 import GradualSpacing from "@/components/ui/gradual-spacing";
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
 import { useWordAnimations } from "@/hooks/useWordAnimations";
+=======
+import { useWordAnimations } from "@/lib/hooks/useWordAnimations";
+>>>>>>> d35e6adba966ea2d9f3fe0433028e30e1f4c4435
 
 export default function Home() {
   const {
