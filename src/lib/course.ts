@@ -21,9 +21,9 @@ export const modules: Module[] = [
     href: "/learn/module/01",
     lessons: [
       {
-        title: "Introduction to ASL, alphabet, and basic numbers.",
+        title: "The finger-writing alphabet",
         activities:
-          "-Practice fingerspelling your name and basic numbers with a partner.",
+          "-Learning the letters of the alphabet.",
         homework: "-Watch an ASL alphabet video and spell 10 common words.",
         href: "/lesson01",
       },
@@ -35,15 +35,15 @@ export const modules: Module[] = [
         href: "/lesson02",
       },
       {
-        title: "Personal pronouns and basic questions.",
+        title: "Basic expressions",
         activities:
-          "-Play a matching game pairing pronouns with common actions.",
+          "-Expressions like 'Hello', 'Thank you', 'Please', 'How are you?', etc.Activities to practice greetings and common phrases.",
         homework: "-Write and sign 5 simple sentences using pronouns.",
         href: "/lesson03",
       },
       {
-        title: "Emotions and simple descriptions.",
-        activities: "-Act out emotions and have your partner guess them.",
+        title: "Vocabulary of daily life.",
+        activities: "-Family, friends, food, transportation, clothing, etc.",
         homework: "-Create flashcards for 10 emotion-related signs.",
         href: "/lesson04",
       },
@@ -51,7 +51,7 @@ export const modules: Module[] = [
         title: "Family and relationships.",
         activities: "-Draw a family tree and sign each relationship.",
         homework: "-Practice introducing your family to someone in ASL",
-        href: "/lesson04",
+        href: "/lesson05",
       },
     ],
   },
@@ -64,78 +64,55 @@ export const modules: Module[] = [
 
     lessons: [
       {
-        title: "Foods and drinks.",
-        activities: "-Sign a pretend grocery list to a partner.",
+        title: "Daily vocabulary.",
+        activities: "-Family, friends, food, transportation, clothes, etc.",
         homework: "-Watch a cooking video in ASL and list new vocabulary.",
         href: "/lesson01",
       },
       {
-        title: "Advanced numbers and time concepts.",
-        activities: "-Create a schedule and sign the times for each activity.",
+        title: "Expression of emotions",
+        activities: "-Signs to express happiness, sadness, anger, fear, etc.",
         homework: "-Practice signing the time for daily activities.",
         href: "/lesson02",
       },
       {
-        title: "Daily activities.",
-        activities: "Sign your morning or evening routine.",
+        title: "Questions and Answers",
+        activities: "How to ask and answer basic questions.",
         homework: "Record yourself signing 5 daily activities.",
         href: "/lesson03",
       },
-      {
-        title: "Transportation and directions.",
-        activities: "Role-play giving directions to a destination.",
-        homework: "Create a map and sign directions to key places.",
-        href: "/lesson04",
-      },
-      {
-        title: "Weather and nature.",
-        activities: "Use weather flashcards to describe today’s weather.",
-        homework: "Sign a 7-day weather forecast.",
-        href: "/lesson05",
-      },
+      
     ],
   },
   {
-    title: "Social Environment",
+    title: "Specific contexts",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "6 lessons",
     href: "/learn/module/03",
     lessons: [
       {
-        title: "School and education.",
-        activities: "Sign items in a classroom scene.",
+        title: "At work",
+        activities: "Words related to professions, tools, meetings, etc..",
         homework: "Write and sign 3 sentences about your school experience.",
         href: "/lesson01",
       },
       {
-        title: "Jobs and professions.",
-        activities: "Mime various professions and have others guess them.",
+        title: "At school",
+        activities: "Signs for school supplies, subjects, grades, etc.",
         homework: "Create a list of 5 professions and their signs.",
         href: "/lesson02",
       },
       {
-        title: "Hobbies and sports",
-        activities: "Sign a dialogue about your favorite hobby.",
+        title: "Emergencies",
+        activities: "Key signals for calling for help, 'call the police', 'call an ambulance', etc.",
         homework: "Learn and practice 3 sports-related signs.",
         href: "/lesson03",
-      },
-      {
-        title: "Vacations and holilessons",
-        activities: "Sign your favorite holiday traditions.",
-        homework: "Create a short video signing about your last vacation.",
-        href: "/lesson04",
-      },
-      {
-        title: "Shopping and money",
-        activities: "Role-play shopping and discussing prices.",
-        homework: "Write and sign 3 dialogues involving shopping.",
-        href: "/lesson05",
       },
     ],
   },
   {
-    title: "Expression and Storytelling",
+    title: "Conversations and fluency",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "8 lessons",
@@ -143,21 +120,21 @@ export const modules: Module[] = [
 
     lessons: [
       {
-        title: "Colors and shapes.",
+        title: "Form complete sentences",
         activities:
-          "Identify objects of specific colors and shapes in the room.",
+          "Basic structure to communicate ideas clearly.",
         homework: "Create a visual collage and label it with ASL signs.",
         href: "/lesson01",
       },
       {
-        title: "Animals and household objects.",
-        activities: "Match animal signs to their pictures.",
+        title: "Body language and gestures",
+        activities: "Importance of context and facial and body movements.",
         homework: "Sign a story about a pet or favorite animal.",
         href: "/lesson02",
       },
       {
-        title: "Common verbs and adjectives.",
-        activities: "Pair verbs with adjectives in mini-sentences.",
+        title: "Practice with dialogues",
+        activities: "Simulated scenarios (in a market, in a restaurant, etc.).",
         homework: "Practice signing 10 action-oriented sentences.",
         href: "/lesson03",
       },
@@ -166,12 +143,6 @@ export const modules: Module[] = [
         activities: "Retell a simple children’s story in ASL.",
         homework: "Create a storyboard for an ASL tale.",
         href: "/lesson04",
-      },
-      {
-        title: "Idiomatic expressions",
-        activities: "Learn 5 idioms and use them in a conversation.",
-        homework: "Research 3 more idioms and practice signing them.",
-        href: "/lesson05",
       },
     ],
   },
