@@ -1,7 +1,7 @@
 interface Lesson {
   title: string;
-  activities: string;
-  homework: string;
+  objetives: string[] | null;
+  vocabulary: string[] | null;
   href: string;
 }
 
@@ -21,36 +21,44 @@ export const modules: Module[] = [
     href: "/learn/module/01",
     lessons: [
       {
-        title: "Introduction to ASL, alphabet, and basic numbers.",
-        activities:
-          "-Practice fingerspelling your name and basic numbers with a partner.",
-        homework: "-Watch an ASL alphabet video and spell 10 common words.",
+        title: "Greetings and Farewells in ASL",
+        objetives: [
+          "Recognize and interpret basic greetings and farewells in ASL.",
+          "Perform greetings and farewells using appropriate facial expressions.",
+          "Understand the cultural significance of greetings and farewells in Deaf interactions.",
+          "Practice fluency and accuracy in signing the introduced vocabulary.",
+        ],
+        vocabulary: [
+          "Greetings: Hello, Hi, Good morning, Good afternoon, Good evening, How are you?",
+          "Farewells: Goodbye, See you later, Take care, See you tomorrow, Have a nice day",
+          "Fingerspelling Alphabet: A-Z",
+        ],
         href: "/lesson01",
       },
       {
         title: "Common greetings and farewells.",
-        activities: "-Role-play meeting someone new and saying goodbye.",
-        homework:
+        objetives: "-Role-play meeting someone new and saying goodbye.",
+        vocabulary:
           "-Practice signing 5 greetings and farewells in front of a mirror.",
         href: "/lesson02",
       },
       {
         title: "Personal pronouns and basic questions.",
-        activities:
+        objetives:
           "-Play a matching game pairing pronouns with common actions.",
-        homework: "-Write and sign 5 simple sentences using pronouns.",
+        vocabulary: "-Write and sign 5 simple sentences using pronouns.",
         href: "/lesson03",
       },
       {
         title: "Emotions and simple descriptions.",
-        activities: "-Act out emotions and have your partner guess them.",
-        homework: "-Create flashcards for 10 emotion-related signs.",
+        objetives: "-Act out emotions and have your partner guess them.",
+        vocabulary: "-Create flashcards for 10 emotion-related signs.",
         href: "/lesson04",
       },
       {
         title: "Family and relationships.",
-        activities: "-Draw a family tree and sign each relationship.",
-        homework: "-Practice introducing your family to someone in ASL",
+        objetives: "-Draw a family tree and sign each relationship.",
+        vocabulary: "-Practice introducing your family to someone in ASL",
         href: "/lesson04",
       },
     ],
@@ -65,32 +73,32 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "Foods and drinks.",
-        activities: "-Sign a pretend grocery list to a partner.",
-        homework: "-Watch a cooking video in ASL and list new vocabulary.",
+        objetives: "-Sign a pretend grocery list to a partner.",
+        vocabulary: "-Watch a cooking video in ASL and list new vocabulary.",
         href: "/lesson01",
       },
       {
         title: "Advanced numbers and time concepts.",
-        activities: "-Create a schedule and sign the times for each activity.",
-        homework: "-Practice signing the time for daily activities.",
+        objetives: "-Create a schedule and sign the times for each activity.",
+        vocabulary: "-Practice signing the time for daily objetives.",
         href: "/lesson02",
       },
       {
-        title: "Daily activities.",
-        activities: "Sign your morning or evening routine.",
-        homework: "Record yourself signing 5 daily activities.",
+        title: "Daily objetives.",
+        objetives: "Sign your morning or evening routine.",
+        vocabulary: "Record yourself signing 5 daily objetives.",
         href: "/lesson03",
       },
       {
         title: "Transportation and directions.",
-        activities: "Role-play giving directions to a destination.",
-        homework: "Create a map and sign directions to key places.",
+        objetives: "Role-play giving directions to a destination.",
+        vocabulary: "Create a map and sign directions to key places.",
         href: "/lesson04",
       },
       {
         title: "Weather and nature.",
-        activities: "Use weather flashcards to describe today’s weather.",
-        homework: "Sign a 7-day weather forecast.",
+        objetives: "Use weather flashcards to describe today’s weather.",
+        vocabulary: "Sign a 7-day weather forecast.",
         href: "/lesson05",
       },
     ],
@@ -104,32 +112,32 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "School and education.",
-        activities: "Sign items in a classroom scene.",
-        homework: "Write and sign 3 sentences about your school experience.",
+        objetives: "Sign items in a classroom scene.",
+        vocabulary: "Write and sign 3 sentences about your school experience.",
         href: "/lesson01",
       },
       {
         title: "Jobs and professions.",
-        activities: "Mime various professions and have others guess them.",
-        homework: "Create a list of 5 professions and their signs.",
+        objetives: "Mime various professions and have others guess them.",
+        vocabulary: "Create a list of 5 professions and their signs.",
         href: "/lesson02",
       },
       {
         title: "Hobbies and sports",
-        activities: "Sign a dialogue about your favorite hobby.",
-        homework: "Learn and practice 3 sports-related signs.",
+        objetives: "Sign a dialogue about your favorite hobby.",
+        vocabulary: "Learn and practice 3 sports-related signs.",
         href: "/lesson03",
       },
       {
         title: "Vacations and holilessons",
-        activities: "Sign your favorite holiday traditions.",
-        homework: "Create a short video signing about your last vacation.",
+        objetives: "Sign your favorite holiday traditions.",
+        vocabulary: "Create a short video signing about your last vacation.",
         href: "/lesson04",
       },
       {
         title: "Shopping and money",
-        activities: "Role-play shopping and discussing prices.",
-        homework: "Write and sign 3 dialogues involving shopping.",
+        objetives: "Role-play shopping and discussing prices.",
+        vocabulary: "Write and sign 3 dialogues involving shopping.",
         href: "/lesson05",
       },
     ],
@@ -144,33 +152,33 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "Colors and shapes.",
-        activities:
+        objetives:
           "Identify objects of specific colors and shapes in the room.",
-        homework: "Create a visual collage and label it with ASL signs.",
+        vocabulary: "Create a visual collage and label it with ASL signs.",
         href: "/lesson01",
       },
       {
         title: "Animals and household objects.",
-        activities: "Match animal signs to their pictures.",
-        homework: "Sign a story about a pet or favorite animal.",
+        objetives: "Match animal signs to their pictures.",
+        vocabulary: "Sign a story about a pet or favorite animal.",
         href: "/lesson02",
       },
       {
         title: "Common verbs and adjectives.",
-        activities: "Pair verbs with adjectives in mini-sentences.",
-        homework: "Practice signing 10 action-oriented sentences.",
+        objetives: "Pair verbs with adjectives in mini-sentences.",
+        vocabulary: "Practice signing 10 action-oriented sentences.",
         href: "/lesson03",
       },
       {
         title: "Telling simple stories.",
-        activities: "Retell a simple children’s story in ASL.",
-        homework: "Create a storyboard for an ASL tale.",
+        objetives: "Retell a simple children’s story in ASL.",
+        vocabulary: "Create a storyboard for an ASL tale.",
         href: "/lesson04",
       },
       {
         title: "Idiomatic expressions",
-        activities: "Learn 5 idioms and use them in a conversation.",
-        homework: "Research 3 more idioms and practice signing them.",
+        objetives: "Learn 5 idioms and use them in a conversation.",
+        vocabulary: "Research 3 more idioms and practice signing them.",
         href: "/lesson05",
       },
     ],
@@ -185,32 +193,32 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "Emergencies and health",
-        activities: "Role-play asking for help in an emergency",
-        homework: "Create flashcards for 5 health-related signs",
+        objetives: "Role-play asking for help in an emergency",
+        vocabulary: "Create flashcards for 5 health-related signs",
         href: "/lesson01",
       },
       {
         title: "Public transport and travel",
-        activities: "Sign a dialogue about planning a trip",
-        homework: "Watch a travel-related ASL video and note new vocabulary",
+        objetives: "Sign a dialogue about planning a trip",
+        vocabulary: "Watch a travel-related ASL video and note new vocabulary",
         href: "/lesson02",
       },
       {
         title: "Restaurants and ordering food",
-        activities: "Role-play ordering at a restaurant",
-        homework: "Sign a list of your favorite meals",
+        objetives: "Role-play ordering at a restaurant",
+        vocabulary: "Sign a list of your favorite meals",
         href: "/lesson03",
       },
       {
         title: "Video phone conversations",
-        activities: "Simulate a video call in ASL",
-        homework: "Write a script for a video conversation",
+        objetives: "Simulate a video call in ASL",
+        vocabulary: "Write a script for a video conversation",
         href: "/lesson04",
       },
       {
         title: "Deaf community culture and etiquette",
-        activities: "Discuss and sign 3 facts about Deaf culture",
-        homework: "Research Deaf events and write a short summary",
+        objetives: "Discuss and sign 3 facts about Deaf culture",
+        vocabulary: "Research Deaf events and write a short summary",
         href: "/lesson05",
       },
     ],
@@ -225,32 +233,32 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "Detailed descriptions",
-        activities: "Describe an object in detail",
-        homework: "Sign 3 descriptions of items in your house",
+        objetives: "Describe an object in detail",
+        vocabulary: "Sign 3 descriptions of items in your house",
         href: "/lesson01",
       },
       {
         title: "Advanced grammar and sentence structure",
-        activities: "Rearrange sentences to practice ASL grammar",
-        homework: "Translate 3 English sentences into ASL structure",
+        objetives: "Rearrange sentences to practice ASL grammar",
+        vocabulary: "Translate 3 English sentences into ASL structure",
         href: "/lesson02",
       },
       {
         title: "Comparisons and contrasts",
-        activities: "Sign comparisons between two items or ideas",
-        homework: "Create a Venn diagram and explain it in ASL",
+        objetives: "Sign comparisons between two items or ideas",
+        vocabulary: "Create a Venn diagram and explain it in ASL",
         href: "/lesson03",
       },
       {
         title: "Formal and informal registers",
-        activities: "Practice signing in formal and casual styles",
-        homework: "Write a formal ASL introduction",
+        objetives: "Practice signing in formal and casual styles",
+        vocabulary: "Write a formal ASL introduction",
         href: "/lesson04",
       },
       {
         title: "Persuasive and argumentative speech",
-        activities: "Debate a simple topic using ASL",
-        homework: "Sign a persuasive message about a topic you care about",
+        objetives: "Debate a simple topic using ASL",
+        vocabulary: "Sign a persuasive message about a topic you care about",
         href: "/lesson05",
       },
     ],
@@ -265,32 +273,32 @@ export const modules: Module[] = [
     lessons: [
       {
         title: "History of the Deaf community.",
-        activities: "Present a historical fact about the Deaf community.",
-        homework: "Watch a video on Deaf history and summarize it.",
+        objetives: "Present a historical fact about the Deaf community.",
+        vocabulary: "Watch a video on Deaf history and summarize it.",
         href: "/lesson01",
       },
       {
         title: "Events and social participation.",
-        activities: "Practice signing an invitation to an event.",
-        homework: "Create an ASL flyer for a fictional Deaf event.",
+        objetives: "Practice signing an invitation to an event.",
+        vocabulary: "Create an ASL flyer for a fictional Deaf event.",
         href: "/lesson02",
       },
       {
         title: "Technology use in ASL.",
-        activities: "Role-play using a device like a TTY or video relay.",
-        homework: "Research a new ASL-related technology.",
+        objetives: "Role-play using a device like a TTY or video relay.",
+        vocabulary: "Research a new ASL-related technology.",
         href: "/lesson03",
       },
       {
         title: "Interviews and dialogues.",
-        activities: "Conduct a mock interview.",
-        homework: "Write and practice 5 interview questions.",
+        objetives: "Conduct a mock interview.",
+        vocabulary: "Write and practice 5 interview questions.",
         href: "/lesson04",
       },
       {
         title: "Diversity in ASL (regionalisms).",
-        activities: "Learn and practice 3 regional variations in signs.",
-        homework: "Research and record 3 examples of ASL diversity.",
+        objetives: "Learn and practice 3 regional variations in signs.",
+        vocabulary: "Research and record 3 examples of ASL diversity.",
         href: "/lesson05",
       },
     ],
@@ -304,33 +312,34 @@ export const modules: Module[] = [
 
     lessons: [
       {
-        title: "Games and activities in ASL.",
-        activities: "Play ASL charades or bingo.",
-        homework: "Create your own ASL game.",
+        title: "Games and objetives in ASL.",
+        objetives: "Play ASL charades or bingo.",
+        vocabulary: "Create your own ASL game.",
         href: "/lesson01",
       },
       {
         title: "Advanced storytelling and presentations.",
-        activities: "Present a short ASL story.",
-        homework: "Record and review a signed story.",
+        objetives: "Present a short ASL story.",
+        vocabulary: "Record and review a signed story.",
         href: "/lesson02",
       },
       {
         title: "Assessment and feedback.",
-        activities: "Peer-review signed sentences or stories.",
-        homework: "Reflect on your ASL learning journey in a signed video.",
+        objetives: "Peer-review signed sentences or stories.",
+        vocabulary: "Reflect on your ASL learning journey in a signed video.",
         href: "/lesson03",
       },
       {
         title: "Interactions.",
-        activities: "Collaborate on a sign language presentation.",
-        homework: "Develop a sign language story or conversation.",
+        objetives: "Collaborate on a sign language presentation.",
+        vocabulary: "Develop a sign language story or conversation.",
         href: "/lesson04",
       },
       {
         title: "Real-life simulations.",
-        activities: "Role-play real-world scenarios, like job interviews.",
-        homework: "Sign a goodbye video summarizing your learning experience.",
+        objetives: "Role-play real-world scenarios, like job interviews.",
+        vocabulary:
+          "Sign a goodbye video summarizing your learning experience.",
         href: "/lesson05",
       },
     ],

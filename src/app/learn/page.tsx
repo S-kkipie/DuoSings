@@ -62,19 +62,15 @@ function Page() {
                         </div>
                         <AccordionContent className="px-4">
                           <div className="mb-2">
-                            <h1 className="text-xl">Lo que aprenderas:</h1>
-                            <p className="text-sm">{lesson.activities}</p>
-                          </div>
-                          <div>
-                            <h1>Tu tarea:</h1>
-                            <p>{lesson.homework}</p>
+                            <h1>Lo que aprenderas:</h1>
+                            <p className="text-xs">{lesson.activities}</p>
                           </div>
                         </AccordionContent>
                       </AccordionItem>
                     ))}
                   </Accordion>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="mt">
                   <p>Duracion : {module.duration}</p>
                 </CardFooter>
               </MagicCard>
