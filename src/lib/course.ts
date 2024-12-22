@@ -104,7 +104,7 @@ export const modules: Module[] = [
     ],
   },
   {
-    title: "Social Environment",
+    title: "Specific contexts",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "6 lessons",
@@ -143,7 +143,7 @@ export const modules: Module[] = [
     ],
   },
   {
-    title: "Expression and Storytelling",
+    title: "Conversations and fluency",
     description:
       "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
     duration: "8 lessons",
