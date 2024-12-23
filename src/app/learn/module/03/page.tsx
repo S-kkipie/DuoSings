@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 function Page() {
   const objectives = [
     {
-      title: "Recognize and interpret basic greetings and farewells in ASL.",
-      description: "Learn the fundamental gestures and their meanings in ASL.",
+      title: "At Work",
+      description: "Learn and perform ASL signs for professions, tools, and workplace scenarios.",
       steps: [
-        "Observe the following image sequences of basic greetings.",
-        "Read the descriptions accompanying each gesture.",
-        "Match the signs with their meanings in a practice exercise.",
+        "Learn and perform ASL signs for professions, tools, and workplace scenarios.",
+        "Imitate signs with camera validation to receive feedback and scores.",
+        "Understand key workplace-related signs for effective communication.",
       ],
-      image: "learn/images/greetings.jpeg",
+      image: "/images/at-work.png",
     },
     {
-      title: "Perform greetings and farewells using appropriate facial expressions.",
-      description: "Master the use of facial expressions to enhance communication.",
+      title: "At School",
+      description: "Familiarize with ASL signs for school-related objects and concepts.",
       steps: [
-        "Watch the video below demonstrating greetings with facial expressions.",
-        "Practice in front of a mirror to replicate the expressions and signs.",
-        "Record yourself and compare with the video example.",
+        "Familiarize with ASL signs for school-related objects and concepts.",
+        "Use camera feedback to master signs for subjects and academic activities.",
+        "Practice integrating school vocabulary into meaningful interactions.",
       ],
-      image: "/images/facial-expressions.png",
+      image: "/images/at-school.png",
     },
     {
-      title: "Understand the cultural significance of greetings and farewells in Deaf interactions.",
-      description: "Explore the cultural importance of greetings in the Deaf community.",
+      title: "Emergency Signs",
+      description: "Learn critical signs for emergency situations like asking for help or calling authorities.",
       steps: [
-        "Read the article below about the cultural importance of greetings in the Deaf community.",
-        "Reflect on how these interactions differ from other cultures.",
-        "Write a short summary of what you learned.",
+        "Learn critical signs for emergency situations like asking for help or calling authorities.",
+        "Simulate emergency scenarios to practice rapid and accurate signing.",
+        "Build confidence in using ASL during stressful situations.",
       ],
-      image: "/images/culture.png",
+      image: "/images/emergency-signs.png",
     },
   ];
 
@@ -46,9 +46,9 @@ function Page() {
           hidden: { opacity: 0.3, x: -20 },
           visible: { opacity: 1, x: 0 },
         }}
-        text="Lección 1: Saludando en ASL"
+        text="Module 3: ASL in Everyday Contexts"
         delayMultiple={0.05}
-        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
+        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent text-4xl md:text-6xl [--animation-delay:200ms] dark:from-white dark:to-white/40"
       />
       
       <div className="mt-8 flex flex-col md:flex-row gap-6 px-6 h-full">

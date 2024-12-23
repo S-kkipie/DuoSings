@@ -12,6 +12,7 @@ interface Module {
   href: string;
   lessons: Lesson[];
 }
+
 export const modules: Module[] = [
   {
     title: "ASL Fundamentals",
@@ -37,311 +38,217 @@ export const modules: Module[] = [
       },
       {
         title: "Common greetings and farewells.",
-        objetives: "-Role-play meeting someone new and saying goodbye.",
-        vocabulary:
-          "-Practice signing 5 greetings and farewells in front of a mirror.",
+        objetives: ["Role-play meeting someone new and saying goodbye."],
+        vocabulary: ["Practice signing 5 greetings and farewells in front of a mirror."],
         href: "/lesson02",
       },
       {
         title: "Personal pronouns and basic questions.",
-        objetives:
-          "-Play a matching game pairing pronouns with common actions.",
-        vocabulary: "-Write and sign 5 simple sentences using pronouns.",
+        objetives: ["Play a matching game pairing pronouns with common actions."],
+        vocabulary: ["Write and sign 5 simple sentences using pronouns."],
         href: "/lesson03",
-      },
-      {
-        title: "Emotions and simple descriptions.",
-        objetives: "-Act out emotions and have your partner guess them.",
-        vocabulary: "-Create flashcards for 10 emotion-related signs.",
-        href: "/lesson04",
-      },
-      {
-        title: "Family and relationships.",
-        objetives: "-Draw a family tree and sign each relationship.",
-        vocabulary: "-Practice introducing your family to someone in ASL",
-        href: "/lesson04",
       },
     ],
   },
   {
-    title: "Everyday Communication",
+    title: "Daily Life Vocabulary and Expressions",
     description:
-      "Continue learning American Sign Language with more advanced vocabulary and sentence structure.",
-    duration: "6 lessons",
+      "Expand your ASL knowledge with daily life vocabulary and expressions, including emotions, questions, and common interactions.",
+    duration: "3 lessons",
     href: "/learn/module/02",
-
     lessons: [
       {
-        title: "Foods and drinks.",
-        objetives: "-Sign a pretend grocery list to a partner.",
-        vocabulary: "-Watch a cooking video in ASL and list new vocabulary.",
+        title: "Daily Life Vocabulary",
+        objetives: [
+          "Learn signs related to family, friends, food, transportation, clothing, and other daily life topics.",
+          "Practice imitating signs in front of the camera for real-time feedback.",
+          "Understand how to use daily life vocabulary in common scenarios.",
+        ],
+        vocabulary: [
+          "Family: Mother, Father, Brother, Sister, etc.",
+          "Food: Apple, Bread, Water, Milk, etc.",
+          "Transportation: Car, Bus, Train, Bicycle, etc.",
+          "Clothing: Shirt, Pants, Jacket, Shoes, etc.",
+        ],
         href: "/lesson01",
       },
       {
-        title: "Advanced numbers and time concepts.",
-        objetives: "-Create a schedule and sign the times for each activity.",
-        vocabulary: "-Practice signing the time for daily objetives.",
+        title: "Expressing Emotions",
+        objetives: [
+          "Recognize and perform signs for expressing emotions such as happiness, sadness, anger, and fear.",
+          "Receive feedback on emotion-related signs through camera validation.",
+          "Understand the importance of facial expressions in conveying emotions in ASL.",
+        ],
+        vocabulary: [
+          "Emotions: Happy, Sad, Angry, Scared, Excited, etc.",
+          "Related expressions: I'm happy, I'm sad, I'm angry.",
+        ],
         href: "/lesson02",
       },
       {
-        title: "Daily objetives.",
-        objetives: "Sign your morning or evening routine.",
-        vocabulary: "Record yourself signing 5 daily objetives.",
+        title: "Questions and Responses",
+        objetives: [
+          "Learn how to formulate and respond to basic questions in ASL.",
+          "Practice question-and-answer scenarios with camera validation.",
+          "Develop conversational skills by combining questions with appropriate responses.",
+        ],
+        vocabulary: [
+          "Questions: What, Where, When, Why, Who, How.",
+          "Responses: I don't know, Yes, No, Maybe, Thank you.",
+        ],
         href: "/lesson03",
-      },
-      {
-        title: "Transportation and directions.",
-        objetives: "Role-play giving directions to a destination.",
-        vocabulary: "Create a map and sign directions to key places.",
-        href: "/lesson04",
-      },
-      {
-        title: "Weather and nature.",
-        objetives: "Use weather flashcards to describe today’s weather.",
-        vocabulary: "Sign a 7-day weather forecast.",
-        href: "/lesson05",
       },
     ],
   },
+  
   {
-    title: "Specific contexts",
+    title: "ASL in Everyday Contexts",
     description:
-      "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
-    duration: "6 lessons",
+      "Develop your ASL skills for work, school, and emergency situations with practical vocabulary and scenarios.",
+    duration: "3 lessons",
     href: "/learn/module/03",
     lessons: [
       {
-        title: "School and education.",
-        objetives: "Sign items in a classroom scene.",
-        vocabulary: "Write and sign 3 sentences about your school experience.",
+        title: "At Work",
+        objetives: [
+          "Learn and perform ASL signs for professions, tools, and workplace scenarios.",
+          "Imitate signs with camera validation to receive feedback and scores.",
+          "Understand key workplace-related signs for effective communication.",
+        ],
+        vocabulary: [
+          "Professions: Teacher, Doctor, Engineer, Mechanic, etc.",
+          "Tools: Hammer, Computer, Pen, Paper, etc.",
+          "Workplace phrases: Meeting, Office, Task, Deadline, etc.",
+        ],
         href: "/lesson01",
       },
       {
-        title: "Jobs and professions.",
-        objetives: "Mime various professions and have others guess them.",
-        vocabulary: "Create a list of 5 professions and their signs.",
+        title: "At School",
+        objetives: [
+          "Familiarize with ASL signs for school-related objects and concepts.",
+          "Use camera feedback to master signs for subjects and academic activities.",
+          "Practice integrating school vocabulary into meaningful interactions.",
+        ],
+        vocabulary: [
+          "Objects: Book, Notebook, Backpack, Pencil, etc.",
+          "Subjects: Mathematics, Science, History, Art, etc.",
+          "Actions: Study, Read, Write, Ask, Answer.",
+        ],
         href: "/lesson02",
       },
       {
-        title: "Hobbies and sports",
-        objetives: "Sign a dialogue about your favorite hobby.",
-        vocabulary: "Learn and practice 3 sports-related signs.",
+        title: "Emergency Signs",
+        objetives: [
+          "Learn critical signs for emergency situations like asking for help or calling authorities.",
+          "Simulate emergency scenarios to practice rapid and accurate signing.",
+          "Build confidence in using ASL during stressful situations.",
+        ],
+        vocabulary: [
+          "Key phrases: Help, Police, Ambulance, Fire, Danger.",
+          "Situations: Medical Emergency, Fire Alarm, Lost Person.",
+        ],
         href: "/lesson03",
-      },
-      {
-        title: "Vacations and holilessons",
-        objetives: "Sign your favorite holiday traditions.",
-        vocabulary: "Create a short video signing about your last vacation.",
-        href: "/lesson04",
-      },
-      {
-        title: "Shopping and money",
-        objetives: "Role-play shopping and discussing prices.",
-        vocabulary: "Write and sign 3 dialogues involving shopping.",
-        href: "/lesson05",
       },
     ],
   },
   {
-    title: "Conversations and fluency",
+    title: "Advanced Communication in ASL",
     description:
-      "Master American Sign Language with advanced grammar, vocabulary, and cultural knowledge.",
-    duration: "8 lessons",
+      "Enhance your ASL fluency by forming complete sentences, using expressive gestures, and practicing real-world dialogues.",
+    duration: "3 lessons",
     href: "/learn/module/04",
-
     lessons: [
       {
-        title: "Colors and shapes.",
-        objetives:
-          "Identify objects of specific colors and shapes in the room.",
-        vocabulary: "Create a visual collage and label it with ASL signs.",
+        title: "Forming Complete Sentences",
+        objetives: [
+          "Master the basic structure of ASL sentences for clear communication.",
+          "Reproduce complete sentences using signs and receive camera feedback.",
+          "Understand the importance of word order and context in ASL.",
+        ],
+        vocabulary: [
+          "Sentence types: Declarative, Interrogative, Imperative.",
+          "Examples: I want water. Where is the book? Help me, please.",
+        ],
         href: "/lesson01",
       },
       {
-        title: "Animals and household objects.",
-        objetives: "Match animal signs to their pictures.",
-        vocabulary: "Sign a story about a pet or favorite animal.",
+        title: "Body Language and Gestures",
+        objetives: [
+          "Learn the role of facial expressions and body movements in ASL.",
+          "Practice incorporating non-manual markers into signing for added clarity.",
+          "Understand how gestures change meaning in different contexts.",
+        ],
+        vocabulary: [
+          "Non-manual markers: Eyebrow raise, Headshake, Shoulder shrug.",
+          "Examples: Yes/No questions, Negations, Emphatic signs.",
+        ],
         href: "/lesson02",
       },
       {
-        title: "Common verbs and adjectives.",
-        objetives: "Pair verbs with adjectives in mini-sentences.",
-        vocabulary: "Practice signing 10 action-oriented sentences.",
+        title: "Dialogue Practice",
+        objetives: [
+          "Engage in simulated dialogues for practical ASL application.",
+          "Use contextual vocabulary to interact fluently in various scenarios.",
+          "Receive feedback on fluency, accuracy, and gesture integration.",
+        ],
+        vocabulary: [
+          "Scenarios: At a market, In a restaurant, Asking for directions.",
+          "Phrases: How much is this? I would like to order. Where is the restroom?",
+        ],
         href: "/lesson03",
       },
-      {
-        title: "Telling simple stories.",
-        objetives: "Retell a simple children’s story in ASL.",
-        vocabulary: "Create a storyboard for an ASL tale.",
-        href: "/lesson04",
-      },
-      {
-        title: "Idiomatic expressions",
-        objetives: "Learn 5 idioms and use them in a conversation.",
-        vocabulary: "Research 3 more idioms and practice signing them.",
-        href: "/lesson05",
-      },
     ],
-  },
+  },  
   {
-    title: "Practical Situations",
+    title: "Advanced Skills in ASL",
     description:
-      "Master American Sign Language in practical scenarios, focusing on everyday situations and cultural etiquette.",
-    duration: "5 lessons",
-    href: "/learn/module/04",
-
-    lessons: [
-      {
-        title: "Emergencies and health",
-        objetives: "Role-play asking for help in an emergency",
-        vocabulary: "Create flashcards for 5 health-related signs",
-        href: "/lesson01",
-      },
-      {
-        title: "Public transport and travel",
-        objetives: "Sign a dialogue about planning a trip",
-        vocabulary: "Watch a travel-related ASL video and note new vocabulary",
-        href: "/lesson02",
-      },
-      {
-        title: "Restaurants and ordering food",
-        objetives: "Role-play ordering at a restaurant",
-        vocabulary: "Sign a list of your favorite meals",
-        href: "/lesson03",
-      },
-      {
-        title: "Video phone conversations",
-        objetives: "Simulate a video call in ASL",
-        vocabulary: "Write a script for a video conversation",
-        href: "/lesson04",
-      },
-      {
-        title: "Deaf community culture and etiquette",
-        objetives: "Discuss and sign 3 facts about Deaf culture",
-        vocabulary: "Research Deaf events and write a short summary",
-        href: "/lesson05",
-      },
-    ],
-  },
-  {
-    title: "Advanced Topics",
-    description:
-      "Advance your ASL proficiency by tackling complex grammar, comparisons, and persuasive communication.",
-    duration: "5 lessons",
+      "Refine your ASL abilities with advanced grammar, storytelling, and debate skills to communicate with clarity and confidence.",
+    duration: "3 lessons",
     href: "/learn/module/05",
-
     lessons: [
       {
-        title: "Detailed descriptions",
-        objetives: "Describe an object in detail",
-        vocabulary: "Sign 3 descriptions of items in your house",
+        title: "Advanced Grammar",
+        objetives: [
+          "Master the use of complex sentence structures in ASL.",
+          "Learn the nuances of time markers, role shifting, and conditional clauses.",
+          "Practice creating grammatically accurate sentences through interactive exercises.",
+        ],
+        vocabulary: [
+          "Time markers: Yesterday, Tomorrow, Later, Now.",
+          "Role shifting: 'He said,' 'She replied,' etc.",
+          "Conditional phrases: If/Then statements.",
+        ],
         href: "/lesson01",
       },
       {
-        title: "Advanced grammar and sentence structure",
-        objetives: "Rearrange sentences to practice ASL grammar",
-        vocabulary: "Translate 3 English sentences into ASL structure",
+        title: "Storytelling in ASL",
+        objetives: [
+          "Develop skills to narrate events, stories, and experiences fluently in ASL.",
+          "Understand the use of pacing, facial expressions, and space in storytelling.",
+          "Create and perform a short narrative using the provided vocabulary.",
+        ],
+        vocabulary: [
+          "Key verbs: Run, Jump, Laugh, Cry, Speak.",
+          "Transitions: Then, Next, Finally.",
+          "Common storytelling phrases: 'Once upon a time,' 'The end,' 'Suddenly.'",
+        ],
         href: "/lesson02",
       },
       {
-        title: "Comparisons and contrasts",
-        objetives: "Sign comparisons between two items or ideas",
-        vocabulary: "Create a Venn diagram and explain it in ASL",
+        title: "Debate and Persuasion",
+        objetives: [
+          "Learn to present arguments and express opinions effectively in ASL.",
+          "Use persuasive signs and expressions to support a point of view.",
+          "Engage in a mock debate to practice critical thinking and fluency.",
+        ],
+        vocabulary: [
+          "Debate terms: Agree, Disagree, Why, Because.",
+          "Opinions: I think, I believe, In my opinion.",
+          "Expressions: Strongly agree, Strongly disagree.",
+        ],
         href: "/lesson03",
       },
-      {
-        title: "Formal and informal registers",
-        objetives: "Practice signing in formal and casual styles",
-        vocabulary: "Write a formal ASL introduction",
-        href: "/lesson04",
-      },
-      {
-        title: "Persuasive and argumentative speech",
-        objetives: "Debate a simple topic using ASL",
-        vocabulary: "Sign a persuasive message about a topic you care about",
-        href: "/lesson05",
-      },
     ],
-  },
-  {
-    title: "Connecting with the Community",
-    description:
-      "Engage with the Deaf community through cultural, technological, and social perspectives.",
-    duration: "5 lessons",
-    href: "/learn/module/06",
+  }
 
-    lessons: [
-      {
-        title: "History of the Deaf community.",
-        objetives: "Present a historical fact about the Deaf community.",
-        vocabulary: "Watch a video on Deaf history and summarize it.",
-        href: "/lesson01",
-      },
-      {
-        title: "Events and social participation.",
-        objetives: "Practice signing an invitation to an event.",
-        vocabulary: "Create an ASL flyer for a fictional Deaf event.",
-        href: "/lesson02",
-      },
-      {
-        title: "Technology use in ASL.",
-        objetives: "Role-play using a device like a TTY or video relay.",
-        vocabulary: "Research a new ASL-related technology.",
-        href: "/lesson03",
-      },
-      {
-        title: "Interviews and dialogues.",
-        objetives: "Conduct a mock interview.",
-        vocabulary: "Write and practice 5 interview questions.",
-        href: "/lesson04",
-      },
-      {
-        title: "Diversity in ASL (regionalisms).",
-        objetives: "Learn and practice 3 regional variations in signs.",
-        vocabulary: "Research and record 3 examples of ASL diversity.",
-        href: "/lesson05",
-      },
-    ],
-  },
-  {
-    title: "Mastering ASL",
-    description:
-      "Achieve fluency through advanced storytelling, projects, and real-world applications.",
-    duration: "5 lessons",
-    href: "/learn/module/07",
-
-    lessons: [
-      {
-        title: "Games and objetives in ASL.",
-        objetives: "Play ASL charades or bingo.",
-        vocabulary: "Create your own ASL game.",
-        href: "/lesson01",
-      },
-      {
-        title: "Advanced storytelling and presentations.",
-        objetives: "Present a short ASL story.",
-        vocabulary: "Record and review a signed story.",
-        href: "/lesson02",
-      },
-      {
-        title: "Assessment and feedback.",
-        objetives: "Peer-review signed sentences or stories.",
-        vocabulary: "Reflect on your ASL learning journey in a signed video.",
-        href: "/lesson03",
-      },
-      {
-        title: "Interactions.",
-        objetives: "Collaborate on a sign language presentation.",
-        vocabulary: "Develop a sign language story or conversation.",
-        href: "/lesson04",
-      },
-      {
-        title: "Real-life simulations.",
-        objetives: "Role-play real-world scenarios, like job interviews.",
-        vocabulary:
-          "Sign a goodbye video summarizing your learning experience.",
-        href: "/lesson05",
-      },
-    ],
-  },
 ];

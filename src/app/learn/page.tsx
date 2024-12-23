@@ -62,7 +62,7 @@ function Page() {
                         </div>
                         <AccordionContent className="px-4">
                           <div className="mb-2">
-                            <h1>Lo que haras:</h1>
+                            <h1>What you will do:</h1>
                             <p className="text-xs">{lesson.objetives}</p>
                           </div>
                         </AccordionContent>

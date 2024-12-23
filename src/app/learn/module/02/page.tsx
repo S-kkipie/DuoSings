@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 function Page() {
   const objectives = [
     {
-      title: "Recognize and interpret basic greetings and farewells in ASL.",
-      description: "Learn the fundamental gestures and their meanings in ASL.",
+      title: "Learn signs related to family, food, transportation, and clothing.",
+      description: "Expand your vocabulary for daily life topics in ASL.",
       steps: [
-        "Observe the following image sequences of basic greetings.",
-        "Read the descriptions accompanying each gesture.",
-        "Match the signs with their meanings in a practice exercise.",
+        "Observe images of signs for daily life vocabulary.",
+        "Imitate the signs in front of the camera for validation.",
+        "Practice using these signs in simple sentences.",
       ],
-      image: "learn/images/greetings.jpeg",
+      image: "/images/daily-vocabulary.png",
     },
     {
-      title: "Perform greetings and farewells using appropriate facial expressions.",
-      description: "Master the use of facial expressions to enhance communication.",
+      title: "Express emotions using ASL and facial expressions.",
+      description: "Master the signs for emotions and the importance of expression.",
       steps: [
-        "Watch the video below demonstrating greetings with facial expressions.",
-        "Practice in front of a mirror to replicate the expressions and signs.",
-        "Record yourself and compare with the video example.",
+        "Watch the video below demonstrating emotion-related signs.",
+        "Practice replicating the signs with accurate facial expressions.",
+        "Validate your signs through the interactive camera feature.",
       ],
-      image: "/images/facial-expressions.png",
+      image: "/images/emotions.png",
     },
     {
-      title: "Understand the cultural significance of greetings and farewells in Deaf interactions.",
-      description: "Explore the cultural importance of greetings in the Deaf community.",
+      title: "Formulate and respond to questions in ASL.",
+      description: "Learn how to communicate effectively by asking and answering questions.",
       steps: [
-        "Read the article below about the cultural importance of greetings in the Deaf community.",
-        "Reflect on how these interactions differ from other cultures.",
-        "Write a short summary of what you learned.",
+        "Study examples of questions and responses in ASL.",
+        "Practice common conversational scenarios with the camera.",
+        "Complete the interactive quiz to reinforce your skills.",
       ],
-      image: "/images/culture.png",
+      image: "/images/questions.png",
     },
   ];
 
@@ -46,9 +46,9 @@ function Page() {
           hidden: { opacity: 0.3, x: -20 },
           visible: { opacity: 1, x: 0 },
         }}
-        text="Lección 1: Saludando en ASL"
+        text="Lección 2: Vocabulario y Expresiones Cotidianas"
         delayMultiple={0.05}
-        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
+        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent text-4xl md:text-6xl [--animation-delay:200ms] dark:from-white dark:to-white/40"
       />
       
       <div className="mt-8 flex flex-col md:flex-row gap-6 px-6 h-full">

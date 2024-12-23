@@ -8,34 +8,34 @@ import { Button } from "@/components/ui/button";
 function Page() {
   const objectives = [
     {
-      title: "Recognize and interpret basic greetings and farewells in ASL.",
-      description: "Learn the fundamental gestures and their meanings in ASL.",
+      title: "Mastering ASL Grammar Rules",
+      description: "Deepen your understanding of advanced ASL grammar, including classifiers and conditional statements.",
       steps: [
-        "Observe the following image sequences of basic greetings.",
-        "Read the descriptions accompanying each gesture.",
-        "Match the signs with their meanings in a practice exercise.",
+        "Learn to use classifiers to describe shapes, sizes, and movements.",
+        "Practice forming conditional statements in ASL for complex conversations.",
+        "Apply advanced grammar rules through interactive exercises.",
       ],
-      image: "learn/images/greetings.jpeg",
+      image: "/images/grammar-rules.png",
     },
     {
-      title: "Perform greetings and farewells using appropriate facial expressions.",
-      description: "Master the use of facial expressions to enhance communication.",
+      title: "Storytelling in ASL",
+      description: "Enhance your storytelling abilities by using expressive techniques and narrative structures.",
       steps: [
-        "Watch the video below demonstrating greetings with facial expressions.",
-        "Practice in front of a mirror to replicate the expressions and signs.",
-        "Record yourself and compare with the video example.",
+        "Study examples of ASL storytelling to understand narrative flow.",
+        "Practice creating your own stories using expressive signing techniques.",
+        "Receive feedback on clarity and engagement through camera validation.",
       ],
-      image: "/images/facial-expressions.png",
+      image: "/images/storytelling.png",
     },
     {
-      title: "Understand the cultural significance of greetings and farewells in Deaf interactions.",
-      description: "Explore the cultural importance of greetings in the Deaf community.",
+      title: "Debate and Persuasion Skills",
+      description: "Develop skills for debating and presenting persuasive arguments in ASL.",
       steps: [
-        "Read the article below about the cultural importance of greetings in the Deaf community.",
-        "Reflect on how these interactions differ from other cultures.",
-        "Write a short summary of what you learned.",
+        "Learn vocabulary and signs specific to presenting opinions and arguments.",
+        "Engage in simulated debates with a focus on clarity and persuasion.",
+        "Practice delivering compelling arguments with expressive signing and gestures.",
       ],
-      image: "/images/culture.png",
+      image: "/images/debate-skills.png",
     },
   ];
 
@@ -46,9 +46,9 @@ function Page() {
           hidden: { opacity: 0.3, x: -20 },
           visible: { opacity: 1, x: 0 },
         }}
-        text="Lección 1: Saludando en ASL"
+        text="Module 5: Advanced Skills in ASL"
         delayMultiple={0.05}
-        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
+        className="animate-fade-in translate-y-[-1rem] bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-3 text-center font-medium leading-none tracking-tighter text-transparent text-4xl md:text-6xl [--animation-delay:200ms] dark:from-white dark:to-white/40"
       />
       
       <div className="mt-8 flex flex-col md:flex-row gap-6 px-6 h-full">
